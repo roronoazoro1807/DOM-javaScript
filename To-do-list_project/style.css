@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#adddTaskBtn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: gray;
+  background-color: #d4edda; /* Light green background for completed tasks */
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.done-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.done-btn:hover {
+  background-color: #218838;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; /* Added margin for consistent spacing */
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus,
+input:focus {
+  outline: 2px solid #007bff; /* Focus styles for accessibility */
+}
+
+.task {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+}
+
+.task.overdue {
+  background-color: #f8d7da; /* Light red background for overdue tasks */
+  border-color: red;
+}
+
+small {
+  color: gray;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  #taskInput {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
